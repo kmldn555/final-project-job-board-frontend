@@ -2,8 +2,9 @@ import {
   BadgeCheck,
   BriefcaseBusiness,
   CalendarDays,
+  ClipboardCheck,
   Gift,
-  Lightbulb,
+  Handshake,
   MapPin,
   MessageSquareText,
   Scale,
@@ -11,8 +12,7 @@ import {
   SlidersHorizontal,
   Star,
   TrendingUp,
-  Users,
-  Wallet,
+  Wallet
 } from "lucide-react";
 
 const ratingDistribution = [
@@ -33,7 +33,7 @@ const popularPositions = [
 
 const reviewCategories = [
   {
-    icon: Users,
+    icon: Handshake,
     title: "Budaya Kerja",
     rating: "5.0",
   },
@@ -263,10 +263,10 @@ export default function ReviewContent() {
               {/* Review Body */}
               <div className="space-y-5 p-5 sm:p-6">
                 {/* Salary Information */}
-                <div className="flex flex-col gap-2 rounded-xl border border-line bg-paper p-4 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex flex-col gap-2 rounded-xl border border-line bg-paper p-4 sm:p-5 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex items-center gap-2">
                     <Wallet size={18} className="shrink-0 text-accent-ink" />
-                    <span className="text-xs font-medium text-ink-2">
+                    <span className="text-xs font-bold text-ink-2">
                       Gaji dilaporkan pada posisi ini
                     </span>
                   </div>
@@ -322,7 +322,7 @@ export default function ReviewContent() {
                 {/* Employee Experience */}
                 <div className="rounded-xl border border-line bg-paper p-4 sm:p-5">
                   <div className="mb-3 flex items-center gap-2">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-accent-ink">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg text-accent-ink">
                       <MessageSquareText size={17} />
                     </div>
 
@@ -347,8 +347,8 @@ export default function ReviewContent() {
                 {/* Management Suggestions */}
                 <div className="rounded-xl border border-line bg-paper p-4 sm:p-5">
                   <div className="mb-3 flex items-center gap-2">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-accent-ink">
-                      <Lightbulb size={17} />
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg text-accent-ink">
+                      <ClipboardCheck size={17} />
                     </div>
 
                     <h4 className="text-sm font-bold text-ink">
