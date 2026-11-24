@@ -1,20 +1,21 @@
 import {
-  ShieldCheck,
   BadgeCheck,
-  Star,
-  MapPin,
-  Phone,
-  Globe,
-  Users,
-  Scale,
+  Building2,
   Gift,
-  TrendingUp,
+  Globe,
+  Handshake,
+  MapPin,
   MessageSquarePlus,
+  Phone,
+  Scale,
+  ShieldCheck,
+  Star,
+  TrendingUp
 } from "lucide-react";
 
 const reviewCategories = [
   {
-    icon: Users,
+    icon: Handshake,
     title: "BUDAYA KERJA",
     rating: "4.8",
     description: "Kolaboratif & Suportif",
@@ -61,8 +62,8 @@ export default function Header() {
         <section className="rounded-2xl border border-line bg-white p-4 shadow-[0_12px_32px_-14px_rgba(11,31,58,0.28)] sm:p-6 lg:p-7">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-5">
             {/* Company Image */}
-            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-paper text-ink-3">
-              <Users size={32} />
+            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-accent-ink">
+              <Building2 size={32} />
             </div>
 
             {/* Company Information */}
