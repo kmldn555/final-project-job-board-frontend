@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Home from "./pages/HomePage";
 import CompanyReviewPage from "./pages/CompanyReviewPage";
+import { AdminDashboardPage } from "./pages/AdminDashboardPage";
 
 export const router = createBrowserRouter([
   {
@@ -10,5 +11,9 @@ export const router = createBrowserRouter([
   {
     path: "/company-review",
     element: <CompanyReviewPage />,
+  },
+  {
+    path: "/admin-dashboard",
+    element: <AdminDashboardPage/>,
   },
 ]);
